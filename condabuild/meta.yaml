@@ -38,6 +38,8 @@ test:
     - openai {{ environ.get('ARTKIT_V_OPENAI', '') }}
     - pytorch {{ environ.get('ARTKIT_V_TORCH', '') }}
     - transformers {{ environ.get('ARTKIT_V_TRANSFORMERS', '') }}
+    - boto3 {{ environ.get('ARTKIT_V_BOTO3', '') }}
+    - moto {{ environ.get('ARTKIT_V_MOTO', '') }}
   commands:
     - conda list
     - python -c "import artkit; import os; assert artkit.__version__ == os.environ['ARTKIT_BUILD_ARTKIT_VERSION']"
