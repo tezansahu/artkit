@@ -1,6 +1,9 @@
 Release Notes
 =============
 
+*artkit* 1.0.6
+--------------
+
 *artkit* 1.0.5
 --------------
 - BUILD: Add prefix to veracode scan number
