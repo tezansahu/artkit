@@ -3,6 +3,7 @@ Release Notes
 
 *artkit* 1.0.6
 --------------
+- API: Added Abstract Base Classes for generic HTTP connectors.
 
 *artkit* 1.0.5
 --------------
@@ -16,6 +17,7 @@ Release Notes
 *artkit* 1.0.4
 --------------
 - API: Added integration for Titan LLM text generation via AWS Bedrock `invoke_model` endpoints on AWS.
+
 
 *artkit* 1.0.3
 --------------
