@@ -1,26 +1,42 @@
 Release Notes
 =============
 
+*artkit* 1.0.7
+--------------
+
+This release adds access to Google's Vertex AI model and fixes the links in the documentation.
+
+- API: Added `VertexAIChat <https://github.com/BCG-X-Official/artkit/blob/1.0.x/src/artkit/model/llm/vertexai/_vertexai.py>`_ to enable users to access Gemini models deployed on Google Vertex AI.
+- DOC: Fix links on the sphinx homepage
+
 *artkit* 1.0.6
 --------------
-- API: Added Abstract Base Classes for generic HTTP connectors.
+
+This release expands ARTKIT's connectivity to include any GenAI application with an exposed HTTP endpoint enabling evaluations of virtually any custom target system.
+
+- API: Added the `HTTPXChatConnector <https://github.com/BCG-X-Official/artkit/blob/1.0.x/src/artkit/model/llm/base/_httpx_chat_connector.py>` which requires further customization by a user for implementation.
+- DOC: Added section `Calling custom endpoints via HTTP <https://github.com/BCG-X-Official/artkit/blob/1.0.x/sphinx/source/user_guide/advanced_tutorials/creating_new_model_classes.ipynb>` to guide implementation of the connector
 
 *artkit* 1.0.5
 --------------
+
+This release adds access to the Titan diffusion model in AWS bedrock and improves the documentation.
+
 - BUILD: Add prefix to veracode scan number
-- DOC: Add links to Jupyer notebooks on top of Sphinx documentation
-- DOC: Added badges that represent the repository to readme
-- DOC: Clarify that pre-commit is already installed via optional dev deps
-- DOC: Various ehancements
-- API: Add Titan diffusion model
+- DOC: Add clarifying documentation including links, badges, and extra details on dev dependencies 
+- API: Add `TitanDiffusion <https://github.com/BCG-X-Official/artkit/blob/1.0.x/src/artkit/model/diffusion/bedrock/_titan.py>` to enable users to access Titan diffusion models.
 
 *artkit* 1.0.4
 --------------
-- API: Added integration for Titan LLM text generation via AWS Bedrock `invoke_model` endpoints on AWS.
 
+This release provides direct ARTKIT access to AWS Bedrock models.
+
+- API: Added `TitanBedrockChat <https://github.com/BCG-X-Official/artkit/blob/1.0.x/src/artkit/model/llm/bedrock/_titan.py>` to enable users to access models deployed on AWS Bedrock.
 
 *artkit* 1.0.3
 --------------
+
+This release exposes key base classes so that users can access them for typing purposes.
 
 - API: Key base classes are now exposed through the :mod:`artkit.api` module:
   :class:`.ChatModel`, :class:`.CompletionModel`, :class:`.DiffusionModel`, and
