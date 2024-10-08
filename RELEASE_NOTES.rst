@@ -1,6 +1,12 @@
 Release Notes
 =============
 
+*artkit* 1.0.10
+--------------
+This release adds access to Azure OpenAI models
+
+- API: Added :class:`.AzureOpenAIChat` to grant users access to models deployed on Azure OpenAI.
+
 *artkit* 1.0.9
 --------------
 
