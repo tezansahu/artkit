@@ -16,12 +16,6 @@ testing and evaluation of Gen AI applications.
 
 .. End-Badges
 
-.. Begin-Badges
-
-|pypi| |conda| |python_versions| |code_style| |made_with_sphinx_doc| |license_badge| |github_actions_build_status| |Contributor_Convenant|
-
-.. End-Badges
-
 Getting started
 ---------------
 
